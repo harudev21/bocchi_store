@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import './components/styles/main.module.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Header from './components/aside/Header';
+import Footer from './components/aside/Footer';
+import Home from './components/Home';
+import Support from './components/Support';
+import Buy from './components/Buy';
+import ErrorPage from './components/404';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+
+      <Routes>
+        <Route path='*' element={<ErrorPage />}></Route>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/support' element={<Support />}></Route>
+        <Route path='/shop' element={<Buy />}></Route>
+      </Routes>
+
+    </Router>
+  )
 }
 
 export default App;

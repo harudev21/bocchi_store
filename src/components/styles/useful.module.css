@@ -1,0 +1,26 @@
+.text_center {
+    text-align: center;
+}
+
+.m_left {
+    margin-left: auto;
+}
+
+.m_right {
+    margin-right: auto;
+}
+
+.mx_auto {
+    margin: auto 0;
+}
+
+.flex_center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+}

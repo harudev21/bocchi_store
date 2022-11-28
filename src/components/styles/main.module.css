@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+    --color-1: #101010;
+    --color-2: #ffb400;
+    --color-3: #121212;
+    --color-4: #2b2a2a;
+    --color-5: #201f1f;
+    
+    background-color: #101010;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    padding: 6px 0;
+    position: relative;
+    /* animation-name: fadeToBottom;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; */
+}
+
+/* @keyframes fadeToBottom {
+    0% {
+        bottom: -15px;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 0px;
+        opacity: 1;
+    }
+} */
+
+::-webkit-scrollbar {
+    background: #2b2a2a;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffb400;
+}

@@ -1,0 +1,207 @@
+main {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1:not(.not_poppins) {
+    font-family: 'Poppins', sans-serif;
+}
+
+.first_component {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.first_component .big_logo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background-image: url('../../../../public/bocchit.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.first_component .about_us {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    background-color: transparent;
+    border: 2px solid var(--color-2);
+    color: var(--color-2);
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 1;
+    transition: transform .2s, opacity .2s;
+}
+
+.first_component .about_us:hover {
+    transform: translateY(-5px);
+    opacity: 0.8;
+}
+
+#what_we_have {
+    margin-top: 180px;
+    border-top: 2px solid var(--color-2);
+    border-bottom: 2px solid var(--color-2);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--color-3);
+    margin-bottom: 250px;
+}
+
+@media (max-width:500px) {
+    h1 {
+        font-size: 25px;
+    }
+}
+
+.list_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.list_cards .card {
+    width: 300px;
+    border: 2px solid transparent;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.list_cards .card img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.list_cards .card h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.list_cards .card p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.list_cards .card img:hover {
+    transform: translateY(-5px);
+}
+
+#service {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 2px solid var(--color-2);
+    border-bottom: 2px solid var(--color-2);
+    background-color: var(--color-3);
+    margin-bottom: 250px;
+}
+
+.list_cards .card .card_icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.list_cards .card .card_icon svg {
+    font-size: 50px;
+}
+
+#staffs {
+    border-top: 2px solid var(--color-2);
+    border-bottom: 2px solid var(--color-2);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 250px;
+    background-color: var(--color-3);
+}
+
+.list_cards .card.card_user img {
+    width: 100px;
+    height: 100px;
+}
+
+.list_cards .card.card_user p.job {
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.list_cards .card.card_user .list_social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.list_cards .card.card_user .list_social a {
+    background-color: var(--color-4);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    width: 45px;
+    height: 45px;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    transition: background-color .3s;
+}
+
+.list_cards .card.card_user .list_social a:hover {
+    background-color: var(--color-5);
+}
+
+#check_out {
+    margin-bottom: 250px;
+    width: 100%;
+}
+
+#check_out .discord_server {
+    background-color: var(--color-4);
+    color: #fff;
+    padding: 12px 25px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 4px;
+    margin-top: 5rem;
+    transition: background-color .3s;
+}
+
+#check_out .discord_server svg {
+    margin-right: 5px;
+}
+
+#check_out .discord_server:hover {
+    background-color: var(--color-5);
+}

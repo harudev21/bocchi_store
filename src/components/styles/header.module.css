@@ -1,0 +1,122 @@
+#nav {
+    background-color: transparent;
+    padding: 64px 128px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: padding .3s;
+}
+
+#nav .text_logo {
+    color: #fff;
+    font-size: 17px;
+    margin: auto 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#nav .text_logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#nav .text_logo span {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+}
+
+#nav .list_items {
+    margin-left:  auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#nav .list_items a {
+    color: #fff;
+    margin: 0 10px;
+    transition: opacity .2s, color .2s;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+#nav .list_items a:hover {
+    opacity: 0.8;
+}
+
+#nav #responsive_bar {
+    display: none;
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#nav #responsive_overlay {
+    display: none;
+}
+
+@media (max-width:900px) {
+    #nav {
+        padding: 64px 64px;
+    }
+}
+
+@media (max-width:700px) {
+    #nav {
+        padding: 34px 32px;
+    }
+
+    #nav .list_items {
+        z-index: 99;
+        position: fixed;
+        width: 300px;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #161616;
+        left: 0;
+        top: 0;
+        margin-left: -300px;
+        transition: margin-left .3s;
+    }
+
+    #nav .list_items a:first-child {
+        margin-top: 16px;
+    }
+
+    #nav .list_items a {
+        padding: 12px;
+    }
+
+    #nav .list_items.active {
+        margin-left: 0;
+    }
+
+    #nav #responsive_bar {
+        display: block;
+        margin-left: auto;
+    }
+
+    /* #nav #responsive_bar.active {
+        color: #ffb400;
+    } */
+
+    #nav #responsive_overlay.active {
+        z-index: 9;
+        position: fixed;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+    }
+}
+
+
+/* #nav .list_items a.active {
+    color: #ffb400;
+} */
