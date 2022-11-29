@@ -14,7 +14,7 @@ class Home extends Component {
                     <p className={popular_style.text_center} style={{ 'fontSize': '20px' }}>Can't find your searching page !</p>
                 </main>
 
-                <Footer />
+                <Footer fixed />
             </React.Fragment>
         );
     }
